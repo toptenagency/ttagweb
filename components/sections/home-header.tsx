@@ -201,7 +201,7 @@ export default function HomeHeader() {
                 <span className="sr-only">TOPTEN Agency</span>
                 <img
                   className="h-8 w-auto"
-                  src="https://topten.agency/wp-content/uploads/2024/06/t-topten-circulo-invertido.svg"
+                  src="https://amplify-d2jtebj3g0cdpz-ma-amplifydataamplifycodege-o2as8a7qlq7j.s3.amazonaws.com/logotipos/isotipo_toptenagency_negro.svg"
                   alt=""
                 />
               </a>
@@ -220,8 +220,8 @@ export default function HomeHeader() {
                   <Disclosure as="div" className="-mx-3">
                     {({ open }) => (
                       <>
-                        <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-100">
-                          Product
+                        <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-black hover:bg-gray-100">
+                          Servicios
                           <ChevronDownIcon
                             className={classNames(
                               open ? "rotate-180" : "",
@@ -236,7 +236,7 @@ export default function HomeHeader() {
                               key={item.name}
                               as="a"
                               href={item.href}
-                              className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-500"
+                              className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-600 hover:bg-gray-500"
                             >
                               {item.name}
                             </DisclosureButton>
@@ -247,19 +247,13 @@ export default function HomeHeader() {
                   </Disclosure>
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-100"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black hover:bg-gray-100"
                   >
-                    Servicios
+                    Portafolio
                   </a>
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    portafolio
-                  </a>
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black hover:bg-gray-50"
                   >
                     Compañia
                   </a>
