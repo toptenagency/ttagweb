@@ -90,7 +90,7 @@ export default function Home() {
         <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
           <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
             <img
-              src="https://topten.agency/wp-content/uploads/2024/06/portal-de_trabajo_para_clientes.png"
+              src="https://amplify-d2jtebj3g0cdpz-ma-amplifydataamplifycodege-o2as8a7qlq7j.s3.amazonaws.com/portal/portal-de_trabajo_para_clientes_toptenagency.png"
               alt="App screenshot"
               width={2432}
               height={1442}

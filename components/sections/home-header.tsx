@@ -81,7 +81,7 @@ export default function HomeHeader() {
               <span className="sr-only">TOPTEN Agency</span>
               <img
                 className="h-11 w-auto"
-                src="https://topten.agency/wp-content/uploads/2024/06/toptenagency-logo-blanco.png"
+                src="https://amplify-d2jtebj3g0cdpz-ma-amplifydataamplifycodege-o2as8a7qlq7j.s3.amazonaws.com/logotipos/logotipo_toptenagency_blanco.png"
                 alt=""
               />
             </a>
