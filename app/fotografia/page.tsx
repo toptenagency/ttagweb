@@ -4,9 +4,15 @@ import ServicesCta from "@/components/sections/services-cta";
 import { useState } from "react";
 
 const stats = [
-  { label: "Alimentos y bebidas / Productos", value: "Gastronomía" },
-  { label: "Interiorismo arquitectonico / Paisajismo", value: "Arquitectura" },
-  { label: "Retrato / Estilo de vida", value: "Retrato" },
+  { label: "Somos expertos especializados", value: "Especialización" },
+  {
+    label: "Estudio fotográfico inalámbrico",
+    value: "Estudio móvil",
+  },
+  {
+    label: "Acceso a tus archivos 24/7",
+    value: "Nube de archivos",
+  },
 ];
 const values = [
   {
@@ -104,10 +110,10 @@ export default function Fotografia() {
                   </h1>
 
                   <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                    Capturamos la esencia de tu marca con sesiones fotográficas
-                    profesionales con un estudio creativo móvil e inalámbrico
-                    que garantiza un ambiente remoto para crear imágenes de alta
-                    calidad directamente en tu establecimiento.
+                    Capturamos la esencia de tu marca con fotografías
+                    profesionales, equipando un estudio creativo móvil e
+                    inalámbrico que garantiza un ambiente remoto para crear
+                    imágenes de alta calidad directamente en tu establecimiento.
                   </p>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
@@ -172,19 +178,19 @@ export default function Fotografia() {
             <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
               <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                 <p className="text-xl leading-8 text-ttag">
-                  Ofrecemos sesiones fotográficas especializadas, garantizando
-                  la entrega de imágenes de alta calidad, directamente en tu
-                  locación.
+                  Realizamos estilos fotográficos especializados, garantizando
+                  la entrega de imágenes únicas y de alta calidad, realizadas
+                  directamente en tu establecimiento.
                 </p>
                 <div className="mt-10 max-w-xl text-base leading-7 text-gray-700">
                   <p>
-                    Ofrecemos un estudio creativo móvil directamente en tu
-                    establecimiento, brindando potencia, movilidad y
-                    versatilidad. La principal ventaja de un estudio móvil es
-                    que la luz artificial nos permite controlar su dirección,
-                    intensidad y temperatura, eliminando la dependencia del sol
-                    y garantizando alta calidad en cualquier circunstancia, sin
-                    comprometer la calidad artística de las fotografías.
+                    Brindamos potencia, movilidad y versatilidad, ya que la
+                    principal ventaja de un estudio móvil es que la luz
+                    artificial nos permite controlar su dirección, intensidad y
+                    temperatura, eliminando la dependencia del sol y su
+                    posición. Esto nos permite realizar una sesión fotográfica
+                    bajo cualquier circunstancia, sin comprometer la calidad
+                    artística de las imágenes finales.
                   </p>
                 </div>
               </div>
@@ -195,10 +201,10 @@ export default function Fotografia() {
                       key={stat.label}
                       className="flex flex-col-reverse gap-y-4"
                     >
-                      <dt className="text-base leading-7 text-gray-600">
+                      <dt className="text-base leading-7 text-fotografia">
                         {stat.label}
                       </dt>
-                      <dd className="text-5xl font-semibold tracking-tight text-gray-900">
+                      <dd className="text-3xl font-semibold tracking-tight text-ttag">
                         {stat.value}
                       </dd>
                     </div>
