@@ -1,7 +1,56 @@
 "use client";
 
 import ServicesCta from "@/components/sections/services-cta";
-import { useState } from "react";
+import {
+  AwaitedReactNode,
+  JSX,
+  JSXElementConstructor,
+  Key,
+  ReactElement,
+  ReactNode,
+  ReactPortal,
+  useState,
+} from "react";
+import {
+  ServerStackIcon,
+  CloudArrowUpIcon,
+  FingerPrintIcon,
+  CpuChipIcon,
+  BeakerIcon,
+} from "@heroicons/react/24/outline";
+
+type Feature = {
+  name: string;
+  description: string;
+  icon: (props: React.ComponentProps<"svg">) => JSX.Element;
+};
+
+const features: Feature[] = [
+  {
+    name: "Especialización",
+    description:
+      "Un equipo de expertos especializados, garantizando la entrega de imágenes creativa, únicas y de alta calidad.",
+    icon: BeakerIcon,
+  },
+  {
+    name: "Equipo de última generación",
+    description:
+      "Brindamos potencia, movilidad y versatilidad. Las principales ventajas de un estudio móvil inalámbbrico.",
+    icon: CpuChipIcon,
+  },
+  {
+    name: "Respaldo de tus archivos en la nube",
+    description:
+      "Todos tus archivos se encontrarán respaldados en nuestro servidor privado 100% seguro",
+    icon: ServerStackIcon,
+  },
+  {
+    name: "Acceso a tus archivos 24/7",
+    description:
+      "Accede a tu biblioteca de archivos de manera ágil, desde tu portal para clientes.",
+    icon: FingerPrintIcon,
+  },
+];
 
 const stats = [
   { label: "Somos expertos especializados", value: "Especialización" },
@@ -170,47 +219,39 @@ export default function Fotografia() {
         </div>
 
         {/* Content section */}
-        <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
-          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-            <h2 className="text-3xl font-bold tracking-tight text-ttag sm:text-4xl">
-              Estilos fotográficos de especialidad
-            </h2>
-            <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
-              <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
-                <p className="text-xl leading-8 text-ttag">
-                  Realizamos estilos fotográficos especializados, garantizando
-                  la entrega de imágenes únicas y de alta calidad, realizadas
-                  directamente en tu establecimiento.
-                </p>
-                <div className="mt-10 max-w-xl text-base leading-7 text-gray-700">
-                  <p>
-                    Brindamos potencia, movilidad y versatilidad, ya que la
-                    principal ventaja de un estudio móvil es que la luz
-                    artificial nos permite controlar su dirección, intensidad y
-                    temperatura, eliminando la dependencia del sol y su
-                    posición. Esto nos permite realizar una sesión fotográfica
-                    bajo cualquier circunstancia, sin comprometer la calidad
-                    artística de las imágenes finales.
-                  </p>
-                </div>
-              </div>
-              <div className="lg:flex lg:flex-auto lg:justify-center">
-                <dl className="w-64 space-y-8 xl:w-80">
-                  {stats.map((stat) => (
-                    <div
-                      key={stat.label}
-                      className="flex flex-col-reverse gap-y-4"
-                    >
-                      <dt className="text-base leading-7 text-fotografia">
-                        {stat.label}
-                      </dt>
-                      <dd className="text-3xl font-semibold tracking-tight text-ttag">
-                        {stat.value}
-                      </dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
+        <div className="bg-transparetn py-10 sm:py-20">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl lg:text-center">
+              <h2 className="text-base font-semibold leading-7 text-fotografia">
+                Sesiones fotográficas profesionales de alta demanda.
+              </h2>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Nuestras sesiones fotográficas
+              </p>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                Impulsan tu marca con contenido profesional que te ayuda a
+                sobresalir y destacar en tus plataformas digitales.
+              </p>
+            </div>
+            <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+              <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                {features.map((feature) => (
+                  <div key={feature.name} className="relative pl-16">
+                    <dt className="text-base font-semibold leading-7 text-gray-900">
+                      <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-fotografia">
+                        <feature.icon
+                          className="h-6 w-6 text-white"
+                          aria-hidden="true"
+                        />
+                      </div>
+                      {feature.name}
+                    </dt>
+                    <dd className="mt-2 text-base leading-7 text-gray-600">
+                      {feature.description}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
             </div>
           </div>
         </div>
@@ -282,7 +323,7 @@ export default function Fotografia() {
           </div>
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
-              Colaboramos con las marcas más inovadoras del mercado
+              Colaboramos con las marcas más innovadoras del mercado
             </h2>
             <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-5 gap-y-10 sm:max-w-xl sm:grid-cols-3 sm:gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-6">
               <img
