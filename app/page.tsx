@@ -68,10 +68,13 @@ export default function Home() {
             La agencia de marketing digital integral.
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-400">
-            Expertos en los cinco pilares fundamentales del marketing digital:
-            Fotografía, producción audiovisual, desarrollo web, estrategia
-            digital y diseño gráfico. Centraliza y mejora hoy los esfuerzos
-            digitales de tu marca.
+            Expertos en los cinco pilares fundamentales del marketing digital
+            <span className="font-bold text-white">
+              {" "}
+              Fotografía, producción audiovisual, desarrollo web, estrategia
+              digital y diseño gráfico.
+            </span>{" "}
+            Centraliza y mejora hoy los esfuerzos digitales de tu marca.
           </p>
 
           <div className="mt-10 flex items-center gap-x-6">
