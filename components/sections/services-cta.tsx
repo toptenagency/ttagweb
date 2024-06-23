@@ -48,9 +48,7 @@ export default function ServicesCta() {
       </div>
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          Estamos listos para iniciar
-          <br />
-          un nuevo proyecto con tu empresa.
+          Estamos listos para iniciar un nuevo proyecto.
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
           Centraliza y mejora hoy los esfuerzos digitales de tu marca.
