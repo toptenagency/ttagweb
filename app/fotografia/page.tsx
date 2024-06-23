@@ -1,35 +1,19 @@
 "use client";
 
 import ServicesCta from "@/components/sections/services-cta";
-import {
-  AwaitedReactNode,
-  JSX,
-  JSXElementConstructor,
-  Key,
-  ReactElement,
-  ReactNode,
-  ReactPortal,
-  useState,
-} from "react";
+import { useState } from "react";
 import {
   ServerStackIcon,
-  CloudArrowUpIcon,
   FingerPrintIcon,
   CpuChipIcon,
   BeakerIcon,
 } from "@heroicons/react/24/outline";
 
-type Feature = {
-  name: string;
-  description: string;
-  icon: (props: React.ComponentProps<"svg">) => JSX.Element;
-};
-
-const features: Feature[] = [
+const features = [
   {
     name: "Especialización",
     description:
-      "Un equipo de expertos especializados, garantizando la entrega de imágenes creativa, únicas y de alta calidad.",
+      "Un equipo de expertos especializados, garantizando la entrega de imágenes creativas, únicas y de alta calidad.",
     icon: BeakerIcon,
   },
   {
@@ -41,13 +25,13 @@ const features: Feature[] = [
   {
     name: "Respaldo de tus archivos en la nube",
     description:
-      "Todos tus archivos se encontrarán respaldados en nuestro servidor privado 100% seguro",
+      "Todos tus archivos se encontrarán respaldados en nuestro servidor privado 100% seguro.",
     icon: ServerStackIcon,
   },
   {
     name: "Acceso a tus archivos 24/7",
     description:
-      "Accede a tu biblioteca de archivos de manera ágil, desde tu portal para clientes.",
+      "Accede a tu biblioteca de archivos de manera ágil, desde nuestro nuevo portal para clientes.",
     icon: FingerPrintIcon,
   },
 ];
@@ -63,11 +47,12 @@ const stats = [
     value: "Nube de archivos",
   },
 ];
+
 const values = [
   {
-    name: "Gastronomia",
+    name: "Gastronomía",
     description:
-      "Reproduce esencia visual de los platos, destacando su color, textura y presentación. Nos especializamos en estilismo gastronómico durante la sesión, asegurando que cada imagen despierte el apetito y resalte la creatividad culinaria.",
+      "Reproduce esencia visual de los platillos, destacando su color, textura y presentación. Nos especializamos en estilismo gastronómico durante la sesión, asegurando que cada imagen despierte el apetito y resalte la creatividad culinaria.",
   },
   {
     name: "Producto",
@@ -77,7 +62,7 @@ const values = [
   {
     name: "Arquitectura",
     description:
-      "Plasma la esencia de los espacios construidos, destacando su diseño, estructura y funcionalidad. Utilizamos lentes especiales para resaltar las líneas, ángulos, formas y texturas de los espacios, tranmitiendo la atmósfera de su entorno.",
+      "Plasma la esencia de los espacios construidos, destacando su diseño, estructura y funcionalidad. Utilizamos lentes especiales para resaltar las líneas, ángulos, formas y texturas de los espacios, transmitiendo la atmósfera de su entorno.",
   },
   {
     name: "Paisaje",
@@ -87,7 +72,7 @@ const values = [
   {
     name: "Retrato",
     description:
-      "Retrato la personalidad y esencia de la persona. Nos especializamos en crear imágenes que resalten la individualidad y el carácter de cada sujeto, ya sean personales o grupales. Trabajamos con iluminación y poses en el estudio móvil para lograr retratos auténticos y expresivos.",
+      "Retrato de la personalidad y esencia de la persona. Nos especializamos en crear imágenes que resalten la individualidad y el carácter de cada sujeto, ya sean personales o grupales. Trabajamos con iluminación y poses en el estudio móvil para lograr retratos auténticos y expresivos.",
   },
   {
     name: "Estilo de vida",
@@ -101,10 +86,7 @@ export default function Fotografia() {
 
   return (
     <div className="bg-white">
-      {/* Header */}
-
       <main className="isolate">
-        {/* Hero section */}
         <div className="relative isolate -z-10">
           <svg
             className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
