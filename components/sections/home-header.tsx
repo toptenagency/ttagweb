@@ -25,7 +25,7 @@ const products = [
     name: "Fotografía",
     description:
       "Estudio creativo móvil e inalámbrico para sesiones de alta demanda.",
-    href: "#",
+    href: "./fotografia",
     icon: CameraIcon,
   },
   {
@@ -34,6 +34,13 @@ const products = [
       "Casa productora especializada en anuncios publicitarios y comerciales. ​",
     href: "#",
     icon: VideoIcon,
+  },
+  {
+    name: "Diseño Gráfico",
+    description:
+      "Estilización, unificación y mejora de la comunicación visual de tu marca.",
+    href: "#",
+    icon: BrushIcon,
   },
   {
     name: "Desarrollo Web",
@@ -49,13 +56,6 @@ const products = [
     href: "#",
     icon: RssIcon,
   },
-  {
-    name: "Diseño Gráfico",
-    description:
-      "Estilización, unificación y mejora de la comunicación visual de tu marca.",
-    href: "#",
-    icon: BrushIcon,
-  },
 ];
 const callsToAction = [
   { name: "Mirar Video", href: "#", icon: PlayCircleIcon },
@@ -70,7 +70,7 @@ export default function HomeHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-black">
+    <header className="bg-ttag">
       <div>
         <nav
           className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-8"
@@ -80,7 +80,7 @@ export default function HomeHeader() {
             <a href="#@/" className="-m-1.5 p-1.5">
               <span className="sr-only">TOPTEN Agency</span>
               <img
-                className="h-11 w-auto"
+                className="h-14 w-auto"
                 src="https://amplify-d2jtebj3g0cdpz-ma-amplifydataamplifycodege-o2as8a7qlq7j.s3.amazonaws.com/logotipos/logotipo_toptenagency_blanco.png"
                 alt=""
               />
@@ -89,11 +89,10 @@ export default function HomeHeader() {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-100"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Abrir menú principal</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
           <PopoverGroup className="hidden lg:flex lg:gap-x-12">
@@ -123,7 +122,7 @@ export default function HomeHeader() {
                       >
                         <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                           <item.icon
-                            className="h-6 w-6 text-gray-100 group-hover:text-black"
+                            className="h-6 w-6 text-gray-500 group-hover:text-black"
                             aria-hidden="true"
                           />
                         </div>
@@ -172,12 +171,6 @@ export default function HomeHeader() {
               className="text-sm font-semibold leading-6 text-gray-100"
             >
               Compañia
-            </a>
-            <a
-              href="./mi-portal"
-              className="text-sm font-semibold leading-6 text-gray-100"
-            >
-              Iniciar Sesión
             </a>
           </PopoverGroup>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
