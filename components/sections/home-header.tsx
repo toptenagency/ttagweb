@@ -83,7 +83,7 @@ export default function HomeHeader() {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-100 outline-none"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-100"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Abrir menú principal</span>
@@ -92,7 +92,7 @@ export default function HomeHeader() {
           </div>
           <Popover.Group className="hidden lg:flex lg:gap-x-12">
             <Popover className="relative">
-              <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-100 outline-none">
+              <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-100 outline-none focus:outline-none">
                 Servicios
                 <ChevronDownIcon
                   className="h-5 w-5 flex-none text-gray-400"
@@ -127,7 +127,10 @@ export default function HomeHeader() {
                         <div className="flex-auto">
                           <a
                             href={item.href}
-                            className="block font-semibold text-gray-900"
+                            className={classNames(
+                              "block font-semibold text-gray-900",
+                              item.hoverColor
+                            )}
                           >
                             {item.name}
                             <span className="absolute inset-0" />
