@@ -1,17 +1,6 @@
 "use client";
 import { useState } from "react";
-import {
-  Dialog,
-  DialogPanel,
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-  Popover,
-  PopoverButton,
-  PopoverGroup,
-  PopoverPanel,
-  Transition,
-} from "@headlessui/react";
+import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, CameraIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import {
   ChevronDownIcon,
@@ -27,13 +16,15 @@ const products = [
       "Estudio creativo móvil e inalámbrico para sesiones de alta demanda.",
     href: "./fotografia",
     icon: CameraIcon,
+    hoverColor: "group-hover:text-fotografia",
   },
   {
     name: "Audiovisual",
     description:
-      "Casa productora especializada en anuncios publicitarios y comerciales. ​",
+      "Casa productora especializada en anuncios publicitarios y comerciales.",
     href: "#",
     icon: VideoIcon,
+    hoverColor: "group-hover:text-audiovisual",
   },
   {
     name: "Diseño Gráfico",
@@ -41,6 +32,7 @@ const products = [
       "Estilización, unificación y mejora de la comunicación visual de tu marca.",
     href: "#",
     icon: BrushIcon,
+    hoverColor: "group-hover:text-disenoGrafico",
   },
   {
     name: "Desarrollo Web",
@@ -48,6 +40,7 @@ const products = [
       "Plataformas web autoadminisrtrables, escalables y maquetadas desde cero.",
     href: "#",
     icon: CodeIcon,
+    hoverColor: "group-hover:text-desarrolloWeb",
   },
   {
     name: "Estrategia Digital",
@@ -55,6 +48,7 @@ const products = [
       "Posicionamiento de tu marca en linea a través de estrategias de contenido y segmentación.",
     href: "#",
     icon: RssIcon,
+    hoverColor: "group-hover:text-estrategiaDigital",
   },
 ];
 const callsToAction = [
@@ -89,21 +83,22 @@ export default function HomeHeader() {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-100"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-100 outline-none"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Abrir menú principal</span>
+              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+          <Popover.Group className="hidden lg:flex lg:gap-x-12">
             <Popover className="relative">
-              <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-100">
+              <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-100 outline-none">
                 Servicios
                 <ChevronDownIcon
                   className="h-5 w-5 flex-none text-gray-400"
                   aria-hidden="true"
                 />
-              </PopoverButton>
+              </Popover.Button>
 
               <Transition
                 enter="transition ease-out duration-200"
@@ -113,7 +108,7 @@ export default function HomeHeader() {
                 leaveFrom="opacity-100 translate-y-0"
                 leaveTo="opacity-0 translate-y-1"
               >
-                <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+                <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
                   <div className="p-4">
                     {products.map((item) => (
                       <div
@@ -122,7 +117,10 @@ export default function HomeHeader() {
                       >
                         <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                           <item.icon
-                            className="h-6 w-6 text-gray-500 group-hover:text-black"
+                            className={classNames(
+                              "h-6 w-6 text-gray-500",
+                              item.hoverColor
+                            )}
                             aria-hidden="true"
                           />
                         </div>
@@ -156,7 +154,7 @@ export default function HomeHeader() {
                       </a>
                     ))}
                   </div>
-                </PopoverPanel>
+                </Popover.Panel>
               </Transition>
             </Popover>
 
@@ -172,7 +170,7 @@ export default function HomeHeader() {
             >
               Compañia
             </a>
-          </PopoverGroup>
+          </Popover.Group>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
               href="#"
@@ -188,7 +186,7 @@ export default function HomeHeader() {
           onClose={setMobileMenuOpen}
         >
           <div className="fixed inset-0 z-10" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">TOPTEN Agency</span>
@@ -213,7 +211,7 @@ export default function HomeHeader() {
                   <Disclosure as="div" className="-mx-3">
                     {({ open }) => (
                       <>
-                        <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-black hover:bg-gray-100">
+                        <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-black hover:bg-gray-100">
                           Servicios
                           <ChevronDownIcon
                             className={classNames(
@@ -222,19 +220,19 @@ export default function HomeHeader() {
                             )}
                             aria-hidden="true"
                           />
-                        </DisclosureButton>
-                        <DisclosurePanel className="mt-2 space-y-2">
+                        </Disclosure.Button>
+                        <Disclosure.Panel className="mt-2 space-y-2">
                           {[...products, ...callsToAction].map((item) => (
-                            <DisclosureButton
+                            <Disclosure.Button
                               key={item.name}
                               as="a"
                               href={item.href}
                               className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-600 hover:bg-gray-500"
                             >
                               {item.name}
-                            </DisclosureButton>
+                            </Disclosure.Button>
                           ))}
-                        </DisclosurePanel>
+                        </Disclosure.Panel>
                       </>
                     )}
                   </Disclosure>
@@ -261,7 +259,7 @@ export default function HomeHeader() {
                 </div>
               </div>
             </div>
-          </DialogPanel>
+          </Dialog.Panel>
         </Dialog>
       </div>
     </header>

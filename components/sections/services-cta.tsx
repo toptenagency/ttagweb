@@ -1,10 +1,10 @@
 "use client";
 
-import ServicesFooter from "./services-footer";
+import SocialFooter from "./social-footer";
 
 export default function ServicesCta() {
   return (
-    <div className="bg-gray-900 relative isolate mt-32 px-6 py-32 sm:mt-56 sm:py-40 lg:px-8">
+    <div className="bg-gray-900 relative isolate mt-32 px-6 py-40 pb-10 sm:mt-28 sm:py-40 sm:pb-10 lg:px-8">
       <svg
         className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
         aria-hidden="true"
@@ -65,7 +65,7 @@ export default function ServicesCta() {
           </a>
         </div>
       </div>
-      <ServicesFooter />
+      <SocialFooter />
     </div>
   );
 }

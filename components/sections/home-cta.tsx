@@ -2,18 +2,17 @@ import {
   PuzzlePieceIcon,
   CloudArrowDownIcon,
 } from "@heroicons/react/24/outline";
-import ServicesFooter from "./services-footer";
 
-export default function Homefooter() {
+export default function HomeCta() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900 py-16 md:pt-0 lg:pb-32 sm:pt-0">
+    <div className="relative isolate overflow-hidden bg-ttag py-28 md:pt-20 lg:pb-30 sm:pt-8">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
             <div className="flex flex-col items-start">
-              <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+              <div className="rounded-md bg-white p-2 ring-1 ring-white/10">
                 <PuzzlePieceIcon
-                  className="h-6 w-6 text-white"
+                  className="h-6 w-6 text-ttag"
                   aria-hidden="true"
                 />
               </div>
@@ -26,9 +25,9 @@ export default function Homefooter() {
               </dd>
             </div>
             <div className="flex flex-col items-start">
-              <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+              <div className="rounded-md bg-white p-2 ring-1 ring-white/10">
                 <CloudArrowDownIcon
-                  className="h-6 w-6 text-white"
+                  className="h-6 w-6 text-ttag"
                   aria-hidden="true"
                 />
               </div>
@@ -80,15 +79,14 @@ export default function Homefooter() {
       >
         <div
           className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr
-    from-[#1C2B44] to-[#1D2B3F] opacity-30"
+    from-ttag to-ttag opacity-30"
           style={{
             clipPath:
               "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
           }}
         />
       </div>
-      <ServicesFooter />
     </div>
   );
 }
-export { Homefooter };
+export { HomeCta };

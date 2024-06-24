@@ -49,13 +49,16 @@ const footerNavigation = {
   ],
 };
 
-export default function ServicesFooter() {
+export default function SocialFooter() {
   return (
-    <footer aria-labelledby="footer-heading" className="relative mb-0 pb-0">
+    <footer
+      aria-labelledby="footer-heading"
+      className="relative mb-0 pb-5 overflow-hidden bg-transparent"
+    >
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto max-w-7xl px-6 pb-0 pt-40 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 pb-5 pt-5 lg:px-8">
         <div className="border-t border-white/10 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
             {footerNavigation.social.map((item) => (
