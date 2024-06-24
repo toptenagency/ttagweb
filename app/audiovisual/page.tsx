@@ -9,6 +9,7 @@ import {
 } from "@heroicons/react/20/solid";
 
 import ServicesCta from "@/components/sections/services-cta";
+import SocialFooter from "@/components/sections/social-footer";
 
 const primaryFeatures = [
   {
@@ -529,6 +530,7 @@ export default function Example() {
 
       {/* Footer */}
       <ServicesCta />
+      <SocialFooter />
     </div>
   );
 }

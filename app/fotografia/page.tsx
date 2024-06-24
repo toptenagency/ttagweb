@@ -14,6 +14,7 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
+import SocialFooter from "@/components/sections/social-footer";
 
 const features = [
   {
@@ -274,7 +275,7 @@ export default function Fotografia() {
         </div>
 
         {/* Content section */}
-        <div className="bg-transparetn py-10 sm:py-20">
+        <div className="bg-transparetn py-10 sm:py-10">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:text-center">
               <h2 className="text-base font-semibold leading-7 text-fotografia">
@@ -416,7 +417,7 @@ export default function Fotografia() {
         </div>
 
         {/* Testimonials section */}
-        <div className="relative isolate mt-32 sm:mt-56 sm:pt-32 mb-32">
+        <div className="relative isolate mt-32 sm:mt-28 sm:pt-32 mb-10">
           <svg
             className="absolute inset-0 -z-10 hidden h-full w-full stroke-white/10 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)] sm:block"
             aria-hidden="true"
@@ -494,7 +495,7 @@ export default function Fotografia() {
                     <figcaption className="flex items-center gap-x-4 border-t border-gray-900/10 px-6 py-4">
                       <div className="flex items-center justify-center h-10 w-10 bg-gray-50 rounded-full">
                         <svg
-                          className="h-6 w-6 text-audiovisual"
+                          className="h-6 w-6 text-fotografia"
                           aria-hidden="true"
                         />
                       </div>
@@ -514,7 +515,7 @@ export default function Fotografia() {
 
         {/* FAQ section */}
         <div className="bg-gray-900">
-          <div className="mx-auto max-w-7xl px-6 py-0 sm:py-0 lg:px-8 lg:py-0">
+          <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
             <div className="mx-auto max-w-4xl divide-y divide-gray-100/30">
               <h2 className="text-2xl font-bold leading-10 tracking-tight text-fotografia">
                 Frequently asked questions
@@ -559,6 +560,7 @@ export default function Fotografia() {
         </div>
       </main>
       <ServicesCta />
+      <SocialFooter />
     </div>
   );
 }

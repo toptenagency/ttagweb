@@ -1,10 +1,8 @@
 "use client";
 
-import SocialFooter from "./social-footer";
-
 export default function ServicesCta() {
   return (
-    <div className="bg-gray-900 relative isolate mt-32 px-6 py-40 pb-10 sm:mt-28 sm:py-40 sm:pb-10 lg:px-8">
+    <div className="bg-gray-900 relative isolate mt-0 px-6 py-10 pb-10 sm:mt-10 sm:py-48 sm:pb-62 lg:px-8">
       <svg
         className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
         aria-hidden="true"
@@ -48,7 +46,7 @@ export default function ServicesCta() {
       </div>
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          Estamos listos para iniciar un nuevo proyecto.
+          Estamos listos para iniciar un nuevo proyecto con tu marca.
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
           Centraliza y mejora hoy los esfuerzos digitales de tu marca.
@@ -65,7 +63,6 @@ export default function ServicesCta() {
           </a>
         </div>
       </div>
-      <SocialFooter />
     </div>
   );
 }
