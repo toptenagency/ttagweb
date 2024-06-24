@@ -3,7 +3,7 @@ import { Inter as FontSans } from "next/font/google";
 import React from "react";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
-import { HomeHeader } from "@/components/sections/home-header";
+import HomeHeader from "@/components/sections/home-header";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -13,6 +13,10 @@ const fontSans = FontSans({
 const RootLayout = ({ children }: any) => {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>TOPTEN Agency</title>
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
