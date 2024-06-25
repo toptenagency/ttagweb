@@ -26,7 +26,7 @@ const features = [
   {
     name: "Estudio creativo móvil en tu locación",
     description:
-      "Nos permite controlar la luz, su dirección, intensidad y temperatura, y sllevar a cabo sesiones en casi bajo cualquier circunstancia.",
+      "Nos permite controlar la luz, su dirección, intensidad y temperatura, y llevar a cabo sesiones, casi bajo cualquier circunstancia.",
     icon: CpuChipIcon,
   },
   {
@@ -36,9 +36,9 @@ const features = [
     icon: FlagIcon,
   },
   {
-    name: "Acceso a tu respaldo de archivos 24/7",
+    name: "Acceso a tus archivos 24/7",
     description:
-      "Accede siempre a tu biblioteca de archivos en nuestro servidor en la nube, desde nuestro nuevo portal de colaboracion empresarial.",
+      "Accede desde nuestro nuevo Portal Empresarial de Colaboración a tu banco de archivos respaldados en nuestro servidor privado.",
     icon: FingerPrintIcon,
   },
 ];
@@ -217,7 +217,7 @@ export default function Fotografia() {
                     <span className="text-fotografia">
                       Fotografías hechas con un estudio creativo,
                     </span>{" "}
-                    directamente en tu locación.
+                    directo en tu locación.
                   </h1>
 
                   <p className="relative mt-6 text-lg leading-8 text-gray-200 sm:max-w-md lg:max-w-none">
@@ -286,7 +286,8 @@ export default function Fotografia() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:text-center">
               <h2 className="text-base font-semibold leading-7 text-fotografia">
-                ¿Cuáles son las cualidades de un estudio creativo móvil?
+                ¿Cuáles son las cualidades y beneficios de un estudio creativo
+                móvil?
               </h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
                 Cualidades del servicio de fotografía
@@ -386,8 +387,8 @@ export default function Fotografia() {
           </div>
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <h2 className="text-center text-lg font-semibold leading-8 text-gray-100">
-              Hemos tenido la oportunidad de colaborar con marcas lideres en el
-              mercado.
+              Hemos tenido la oportunidad de colaborar de manera estrecha con
+              marcas líderes en el mercado.
             </h2>
             <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-5 gap-y-10 sm:max-w-xl sm:grid-cols-3 sm:gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-6">
               <img
@@ -486,7 +487,7 @@ export default function Fotografia() {
                   ¿Cómo luce nuestro trabajo fotográfico?
                 </h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
-                  Explora alguno de nuestros proyectos recientes
+                  Explora alguno de nuestros proyectos más recientes
                 </p>
               </div>
               <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-sm leading-6 text-gray-900 sm:grid-cols-2 lg:max-w-none lg:grid-cols-3">

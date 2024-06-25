@@ -49,8 +49,7 @@ export default function ServicesCta() {
           Estamos listos para iniciar un proyecto de fotografía con tu marca.
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-          Centraliza y mejora hoy los esfuerzos digitales de tu marca con
-          nuestro servicio de fotografía o un paquete integral.
+          Centraliza y mejora hoy los esfuerzos digitales de tu marca.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <a
