@@ -43,18 +43,6 @@ const features = [
   },
 ];
 
-const stats = [
-  { label: "Somos expertos especializados", value: "Especialización" },
-  {
-    label: "Estudio fotográfico inalámbrico",
-    value: "Estudio móvil",
-  },
-  {
-    label: "Acceso a tus archivos 24/7",
-    value: "Nube de archivos",
-  },
-];
-
 const values = [
   {
     name: "Gastronomía",
@@ -129,29 +117,44 @@ const testimonials = [
 
 const faqs = [
   {
-    question: "What's the best thing about Switzerland?",
+    question: "¿Qué es un estudio móvil y cuáles son sus beneficios?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Un estudio creativo móvil implica montar y operar todo nuestro equipo fotográfico inalámbrico directamente en tu establecimiento, ofreciendo así toda su potencia, movilidad y versatilidad, tal como lo hacen los estudios creativos especializados. La principal ventaja de un estudio móvil radica en la luz artificial, ya que nos permite controlar su dirección, intensidad y temperatura, lo que la hace más moldeable y predecible. Esta flexibilidad nos libera de depender del sol y su posición, lo que nos permite llevar a cabo sesiones fotográficas en diversas circunstancias. Además, agiliza el proceso de trabajo en locación sin comprometer la calidad artística y comercial de las fotografías. La luz es la materia prima de la fotografía, y es crucial contar con elementos remotos, inalámbricos y de la más alta calidad posible para proyectar de manera óptima tu marca, la esencia de tu establecimiento y la presentación de tus platillos a través de imágenes comerciales.",
   },
   {
-    question: "What's the best thing about Switzerland?",
+    question: "¿Cuántas fotografías incluye cada sesión de estudio?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "La cantidad de fotografías entregadas depende del estilo fotográfico que elija el cliente, ya que cada estilo tiene sus propias características y limitaciones.  Gastronomía y Producto: Se capturan 5 ítems gastronómicos, cada uno en 3 ángulos, resultando en 15 imágenes finales. Arquitectura y Paisaje: Cada ángulo arquitectónico se captura una sola vez de manera multiple, resultando en 5 imagenes finales. Retrato y Estilo de vida: Cada escena se captura en 2 ángulos, resultando en 10 imágenes finales. Nota - En el caso de contratar un paquete de colaboración mensual, los estilos pueden ser mixtos para una creación de contenido más versátil y organizada.",
   },
   {
-    question: "What's the best thing about Switzerland?",
+    question: "¿Qué considerar para una sesión de estudio en mi locación?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Para una sesión de estudio en tu locación, asegúrate de tener un área designada de al menos 3.5 metros cuadrados, libre de tránsito de personal durante la sesión. Dependiendo del estilo fotográfico que elegiste, prepara el entorno adecuadamente: en gastronomía/producto, los alimentos y bebidas deben ser frescos y preparados durante la sesión; en arquitectura/paisaje, el área debe estar acomodada y escombrada; y en retrato/estilo de vida, las personas deben estar presentables y contar con maquillista y cambios de vestuario si es necesario. Completa el shooting list en tu cuenta del portal de TOPTEN Agency antes de la sesión, detallando los ítems, ángulos o escenas a fotografiar. Asegúrate de tener todos los elementos y accesorios necesarios, y que el personal del establecimiento esté informado y disponible para brindar apoyo al equipo de producción.",
   },
   {
-    question: "What's the best thing about Switzerland?",
+    question: "¿Qué conceptos no están incluidos en la sesion fotográfica?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Las sesiones no incluyen elementos decorativos, utilería, fondos, cicloramas  cambio de locación, horas extras, o la contratación de actores / modelos. Esto significa que el cliente debe proporcionar cualquier elemento adicional de producción necesario y en caso de esta extenderse más allá de las 4 horas estipuladas, será necesario revisar la disponibilidad o coordinar una nueva fecha, de sesión lo cual resulta en un costo extra por llamado (traslado de personal y equipo de producción).",
   },
   {
-    question: "What's the best thing about Switzerland?",
+    question: "¿Cómo se seleccionan las fotografías finales?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Todas las fotografías capturadas serán presentadas al cliente o gerente de marca durante la sesión para su selección y autorización. Las fotografías descartadas serán eliminadas permanentemente, garantizando la privacidad y confidencialidad de la información visual y el almacenamiento de nuestro servidor.",
+  },
+  {
+    question: "Cómo se entregan las fotografías finales?",
+    answer:
+      "Las imágenes se proporcionarán en formato .jpg con una resolución superior a 8000 píxeles, asegurando alta definición y detalle en cada fotografía. Los archivos fotográficos estarán disponibles para su entrega en un plazo mínimo de 3 días hábiles después de la sesión fotográfica. Nota - La agencia no proporciona imágenes sin revelar ni en formatos .raw bajo ninguna circunstancia. Todas las fotografías entregadas estarán completamente editadas y listas para su uso.",
+  },
+  {
+    question: "¿Cuál es el alcance de la post-producción?",
+    answer:
+      "La post-producción incluida en cada sesión es: el revelado digital, la corrección de color, el estilo de colorimetría e intenciones creativas de edición y el retoque general de inperfecciones. Todo retoque avanzado, clonación o montaje requerido en las fotografías, genera un costo extra según el requerimiento.",
+  },
+  {
+    question: "¿Qué es el Portal de colaboracion empresarial?",
+    answer:
+      "La post-producción incluida en cada sesión es: el revelado digital, la corrección de color, el estilo de colorimetría e intenciones creativas de edición y el retoque general de inperfecciones. Todo retoque avanzado, clonación o montaje requerido en las fotografías, genera un costo extra según el requerimiento.",
   },
 ];
 
@@ -209,7 +212,7 @@ export default function Fotografia() {
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                   <h1 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
                     <span className="text-fotografia">
-                      Un estudio fotográfico creativo,
+                      Fotografías hechas con un estudio creativo,
                     </span>{" "}
                     directamente en tu locación.
                   </h1>
@@ -217,8 +220,9 @@ export default function Fotografia() {
                   <p className="relative mt-6 text-lg leading-8 text-gray-200 sm:max-w-md lg:max-w-none">
                     Capturamos la esencia de tu marca con fotografías
                     profesionales, equipando un estudio creativo móvil e
-                    inalámbrico que garantiza un ambiente remoto para crear
-                    imágenes de alta calidad directamente en tu establecimiento.
+                    inalámbrico que garantiza un ambiente remoto, ideal para
+                    crear imágenes de alta calidad directamente en tu
+                    establecimiento.
                   </p>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
@@ -279,14 +283,15 @@ export default function Fotografia() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:text-center">
               <h2 className="text-base font-semibold leading-7 text-fotografia">
-                Sesiones fotográficas profesionales de alta demanda.
+                ¿Cuáles son las cualidades de un estudio creativo móvil?
               </h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
-                Nuestras sesiones fotográficas
+                Cualidades del servicio de fotografía
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-100">
-                Impulsan tu marca con contenido profesional que te ayuda a
-                sobresalir y destacar en tus plataformas digitales.
+                El servicio de fotografía con estudio creativo, ayuda generar un
+                contenido sobresaliente para que tu marca destaque en
+                plataformas digitales.
               </p>
             </div>
             <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -325,12 +330,11 @@ export default function Fotografia() {
         <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
-              Caracteristicas principales de los estilos fotográficos más
-              solicitados
+              Estos son los diferentes estilos de fotografía que realizamos.
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-100">
-              Conoce los estilos fotográficos que realizamos con mayor
-              frecuencia.
+              ¿No sabes que tipo de fotografía necesita tu marca? Conoce los
+              estilos fotográficos que realizamos con mayor frecuencia.
             </p>
           </div>
           <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -379,7 +383,8 @@ export default function Fotografia() {
           </div>
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <h2 className="text-center text-lg font-semibold leading-8 text-gray-100">
-              Colaboramos con las marcas más innovadoras del mercado
+              Hemos tenido la oportunidad de colaborar con marcas lideres en el
+              mercado.
             </h2>
             <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-5 gap-y-10 sm:max-w-xl sm:grid-cols-3 sm:gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-6">
               <img
@@ -475,10 +480,10 @@ export default function Fotografia() {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-xl sm:text-center">
                 <h2 className="text-lg font-semibold leading-8 tracking-tight text-fotografia">
-                  Testimonials
+                  ¿Cómo luce nuestro trabajo fotográfico?
                 </h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
-                  We have worked with thousands of amazing people
+                  Explora alguno de nuestros proyectos recientes
                 </p>
               </div>
               <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-sm leading-6 text-gray-900 sm:grid-cols-2 lg:max-w-none lg:grid-cols-3">
@@ -490,7 +495,7 @@ export default function Fotografia() {
                     <img
                       src={testimonial.imageSrc}
                       alt="Testimonial"
-                      className="w-full rounded-t-2xl shadow-lg"
+                      className="w-full rounded-t-2xl"
                     />
                     <figcaption className="flex items-center gap-x-4 border-t border-gray-900/10 px-6 py-4">
                       <div className="flex items-center justify-center h-10 w-10 bg-gray-50 rounded-full">
@@ -518,7 +523,8 @@ export default function Fotografia() {
           <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
             <div className="mx-auto max-w-4xl divide-y divide-gray-100/30">
               <h2 className="text-2xl font-bold leading-10 tracking-tight text-fotografia">
-                Frequently asked questions
+                Preguntas frecuentes con respecto a nuestro servicio de
+                fotografía
               </h2>
               <dl className="mt-10 space-y-6 divide-y divide-gray-100/10">
                 {faqs.map((faq) => (
