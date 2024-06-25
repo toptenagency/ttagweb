@@ -26,7 +26,7 @@ const features = [
   {
     name: "Estudio creativo móvil en tu locación",
     description:
-      "Nos permite controlar su dirección, intensidad y temperatura, lo que nos permite llevar a cabo sesiones en casin cualquier circunstancia.",
+      "Nos permite controlar la luz, su dirección, intensidad y temperatura, y sllevar a cabo sesiones en casi bajo cualquier circunstancia.",
     icon: CpuChipIcon,
   },
   {
@@ -124,37 +124,40 @@ const faqs = [
   {
     question: "¿Cuántas fotografías incluye cada sesión de estudio?",
     answer:
-      "La cantidad de fotografías entregadas depende del estilo fotográfico que elija el cliente, ya que cada estilo tiene sus propias características y limitaciones.  Gastronomía y Producto: Se capturan 5 ítems gastronómicos, cada uno en 3 ángulos, resultando en 15 imágenes finales. Arquitectura y Paisaje: Cada ángulo arquitectónico se captura una sola vez de manera multiple, resultando en 5 imagenes finales. Retrato y Estilo de vida: Cada escena se captura en 2 ángulos, resultando en 10 imágenes finales. Nota - En el caso de contratar un paquete de colaboración mensual, los estilos pueden ser mixtos para una creación de contenido más versátil y organizada.",
+      "La cantidad de fotografías entregadas depende del estilo fotográficoque se esta ejecutando en sesión, ya que cada estilo tiene sus propias características y limitaciones.  En el estilo de Gastronomía/Producto se entregan 15 imágenes finales (3 por cada ítem gastronómico). Para Arquitectura/Paisaje, se proporcionan 5 imágenes finales (1 por cada ángulo arquitectónico). En Retrato/Estilo de Vida, se entregan 10 imágenes finales (2 por cada escena).",
   },
   {
-    question: "¿Qué considerar antes de una sesión de estudio en mi locación?",
+    question: "¿Qué considerar antes de una sesión en mi locación?",
     answer:
       "Para una sesión de estudio en tu locación, asegúrate de tener un área designada de al menos 3.5 metros cuadrados, libre de tránsito de personal durante la sesión. Dependiendo del estilo fotográfico que elegiste, prepara el entorno adecuadamente: en gastronomía/producto, los alimentos y bebidas deben ser frescos y preparados durante la sesión; en arquitectura/paisaje, el área debe estar acomodada y escombrada; y en retrato/estilo de vida, las personas deben estar presentables y contar con maquillista y cambios de vestuario si es necesario. Completa el shooting list en tu cuenta del portal de TOPTEN Agency antes de la sesión, detallando los ítems, ángulos o escenas a fotografiar. Asegúrate de tener todos los elementos y accesorios necesarios, y que el personal del establecimiento esté informado y disponible para brindar apoyo al equipo de producción.",
   },
   {
-    question: "¿Qué conceptos no están incluidos en la sesion?",
+    question: "¿Qué conceptos no están incluidos dentro de la sesión?",
     answer:
       "Las sesiones no incluyen elementos decorativos, utilería, fondos, cicloramas  cambio de locación, horas extras, o la contratación de actores / modelos. Esto significa que el cliente debe proporcionar cualquier elemento adicional de producción necesario y en caso de esta extenderse más allá de las 4 horas estipuladas, será necesario revisar la disponibilidad o coordinar una nueva fecha, de sesión lo cual resulta en un costo extra por llamado (traslado de personal y equipo de producción).",
   },
   {
-    question: "¿Cómo se seleccionan las fotografías finales?",
+    question: "¿Cómo se seleccionan las fotografías finales de una sesión?",
     answer:
       "Todas las fotografías capturadas serán presentadas al cliente o gerente de marca durante la sesión para su selección y autorización. Las fotografías descartadas serán eliminadas permanentemente, garantizando la privacidad y confidencialidad de la información visual y el almacenamiento de nuestro servidor.",
   },
   {
-    question: "Cómo se entregan mis fotografías finales?",
+    question:
+      "Cuál es el proceso de entrega y formato de mis fotografías finales?",
     answer:
-      "Las imágenes se proporcionarán en formato .jpg con una resolución superior a 8000 píxeles, asegurando alta definición y detalle en cada fotografía. Los archivos fotográficos estarán disponibles para su entrega en un plazo mínimo de 3 días hábiles después de la sesión fotográfica. Nota - La agencia no proporciona imágenes sin revelar ni en formatos .raw bajo ninguna circunstancia. Todas las fotografías entregadas estarán completamente editadas y listas para su uso.",
+      "Las imágenes se proporcionarán en formato .jpg con una resolución superior a 8000 píxeles, asegurando alta definición y detalle en cada fotografía. Los archivos fotográficos estarán disponibles para su entrega en un plazo mínimo de 3 días hábiles después de la sesión fotográfica a través de tu Portal de Colaboración Empresarial, listas para ser descargadas en alta resolución. Nota: La agencia no proporciona imágenes sin revelar ni en formatos .raw bajo ninguna circunstancia. Todas las fotografías entregadas estarán completamente editadas y listas para su uso..",
   },
   {
-    question: "¿Cuál es el alcance de la post-producción?",
+    question:
+      "¿Cuál es el alcance de la post-producción de las fotografías finales?",
     answer:
       "La post-producción incluida en cada sesión es: el revelado digital, la corrección de color, el estilo de colorimetría e intenciones creativas de edición y el retoque general de inperfecciones. Todo retoque avanzado, clonación o montaje requerido en las fotografías, genera un costo extra según el requerimiento.",
   },
   {
-    question: "¿Qué es el Portal de Colaboracion Empresarial?",
+    question:
+      "¿Los beneficios del Portal Empresal de Colaboración tienen un costo?",
     answer:
-      "La post-producción incluida en cada sesión es: el revelado digital, la corrección de color, el estilo de colorimetría e intenciones creativas de edición y el retoque general de inperfecciones. Todo retoque avanzado, clonación o montaje requerido en las fotografías, genera un costo extra según el requerimiento.",
+      "El Portal Empresarial de Colaboración es una plataforma empresarial desarollada por TOPTEN Agency ®, 100% gratuita, donde podrás monitorear todos los servicios que ofrecemos de manera puntual y clara. Además, podrás descargar tus fotografías las 24 horas del día, los 7 días de la semana, sin necesidad de solicitar tus archivos a la agencia. Todos tus archivos estarán siempre respaldados en nuestro servidor privado con 1TB de almacenamiento sin costo y estarán disponibles para descargarse sin caducidad ni restricciones, mientras nuestra colaboración se encuentre activa.",
   },
 ];
 
@@ -458,7 +461,7 @@ export default function Fotografia() {
               aria-hidden="true"
             >
               <div
-                className="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-fotografia to-indigo-600"
+                className="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-fotografia to-[#1C2B44]"
                 style={{
                   clipPath:
                     "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
@@ -470,7 +473,7 @@ export default function Fotografia() {
               aria-hidden="true"
             >
               <div
-                className="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-fotografia to-audiovisual xl:ml-0 xl:mr-[calc(50%-12rem)]"
+                className="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-fotografia to-fotografia xl:ml-0 xl:mr-[calc(50%-12rem)]"
                 style={{
                   clipPath:
                     "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
@@ -523,8 +526,7 @@ export default function Fotografia() {
           <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
             <div className="mx-auto max-w-4xl divide-y divide-gray-100/30">
               <h2 className="text-2xl font-bold leading-10 tracking-tight text-fotografia">
-                Preguntas frecuentes con respecto a nuestro servicio de
-                fotografía
+                Preguntas frecuentes sobre nuestro servicio fotográfico
               </h2>
               <dl className="mt-10 space-y-6 divide-y divide-gray-100/10">
                 {faqs.map((faq) => (
