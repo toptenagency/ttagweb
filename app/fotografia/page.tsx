@@ -15,6 +15,7 @@ import {
 } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 import SocialFooter from "@/components/sections/social-footer";
+import { CameraIcon } from "lucide-react";
 
 const features = [
   {
@@ -79,39 +80,39 @@ const values = [
 const testimonials = [
   {
     imageSrc:
-      "https://amplify-d2jtebj3g0cdpz-ma-amplifydataamplifycodege-o2as8a7qlq7j.s3.amazonaws.com/servicio-fotografia/fotografia-arquitectura-boa-juegos.jpg",
-    name: "Brenna Goyette",
-    username: "@brennagoyette",
+      "https://ttag-portfolio.s3.amazonaws.com/servicio-fotografia-muestra/arquitectura_boa.webp",
+    name: "Boa SportBar",
+    username: "@boacancun.com.mx",
   },
   {
     imageSrc:
-      "https://amplify-d2jtebj3g0cdpz-ma-amplifydataamplifycodege-o2as8a7qlq7j.s3.amazonaws.com/servicio-fotografia/fotografia-arquitectura-boa-juegos.jpg",
-    name: "Brenna Goyette",
-    username: "@brennagoyette",
+      "https://ttag-portfolio.s3.amazonaws.com/servicio-fotografia-muestra/estilo_de_vida_xcaret.webp",
+    name: "Spa Muluk Hotel Xcaret",
+    username: "@hotelxcaretarte",
   },
   {
     imageSrc:
-      "https://amplify-d2jtebj3g0cdpz-ma-amplifydataamplifycodege-o2as8a7qlq7j.s3.amazonaws.com/servicio-fotografia/fotografia-arquitectura-boa-juegos.jpg",
-    name: "Brenna Goyette",
-    username: "@brennagoyette",
+      "https://ttag-portfolio.s3.amazonaws.com/servicio-fotografia-muestra/gastronomia_bebida_doctorcito.webp",
+    name: "El Doctorcito",
+    username: "@eldoctorcitocancun",
   },
   {
     imageSrc:
-      "https://amplify-d2jtebj3g0cdpz-ma-amplifydataamplifycodege-o2as8a7qlq7j.s3.amazonaws.com/servicio-fotografia/fotografia-arquitectura-boa-juegos.jpg",
-    name: "Brenna Goyette",
-    username: "@brennagoyette",
+      "https://ttag-portfolio.s3.amazonaws.com/servicio-fotografia-muestra/arquitectura_gran_puerto.webp",
+    name: "Gran Puerto",
+    username: "@granpuerto.rest",
   },
   {
     imageSrc:
-      "https://amplify-d2jtebj3g0cdpz-ma-amplifydataamplifycodege-o2as8a7qlq7j.s3.amazonaws.com/servicio-fotografia/fotografia-arquitectura-boa-juegos.jpg",
-    name: "Brenna Goyette",
-    username: "@brennagoyette",
+      "https://ttag-portfolio.s3.amazonaws.com/servicio-fotografia-muestra/gastronomia_platillo_buenabarra.webp",
+    name: "La Buena Barra",
+    username: "@labuenabarracun",
   },
   {
     imageSrc:
-      "https://amplify-d2jtebj3g0cdpz-ma-amplifydataamplifycodege-o2as8a7qlq7j.s3.amazonaws.com/servicio-fotografia/fotografia-arquitectura-boa-juegos.jpg",
-    name: "Brenna Goyette",
-    username: "@brennagoyette",
+      "https://ttag-portfolio.s3.amazonaws.com/servicio-fotografia-muestra/gastronomia_torta_ahogada_los_meros_de_jalisco.webp",
+    name: "Los Meros de Jalisco",
+    username: "@losmerosdejalisco",
   },
 ];
 
@@ -232,7 +233,7 @@ export default function Fotografia() {
                   <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                     <div className="relative">
                       <img
-                        src="https://amplify-d2jtebj3g0cdpz-ma-amplifydataamplifycodege-o2as8a7qlq7j.s3.amazonaws.com/servicio-fotografia/fotografia-producto-toptenagency.jpg"
+                        src="https://ttag-portfolio.s3.amazonaws.com/servicio_fotografia_hero/fotografia-arquitectura-karma-tulum-toptenagency+copia.webp"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -242,7 +243,7 @@ export default function Fotografia() {
                   <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                     <div className="relative">
                       <img
-                        src="https://amplify-d2jtebj3g0cdpz-ma-amplifydataamplifycodege-o2as8a7qlq7j.s3.amazonaws.com/servicio-fotografia/fotografia-gastronomica-platillo-toptenagency.jpg"
+                        src="https://ttag-portfolio.s3.amazonaws.com/servicio_fotografia_hero/fotografia-gastronomica-bebida-starbucks-toptenagency+copia.webp"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -250,7 +251,7 @@ export default function Fotografia() {
                     </div>
                     <div className="relative">
                       <img
-                        src="https://amplify-d2jtebj3g0cdpz-ma-amplifydataamplifycodege-o2as8a7qlq7j.s3.amazonaws.com/servicio-fotografia/fotografia-arquitectura-karma-tulum-toptenagency.jpg"
+                        src="https://ttag-portfolio.s3.amazonaws.com/servicio_fotografia_hero/fotografia-gastronomica-platillo-toptenagency+copia.webp"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -260,7 +261,7 @@ export default function Fotografia() {
                   <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                     <div className="relative">
                       <img
-                        src="https://amplify-d2jtebj3g0cdpz-ma-amplifydataamplifycodege-o2as8a7qlq7j.s3.amazonaws.com/servicio-fotografia/fotografia-gastronomica-bebida-starbucks-toptenagency.jpg"
+                        src="https://ttag-portfolio.s3.amazonaws.com/servicio_fotografia_hero/fotografia-producto-toptenagency+copia.webp"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -268,7 +269,7 @@ export default function Fotografia() {
                     </div>
                     <div className="relative">
                       <img
-                        src="https://amplify-d2jtebj3g0cdpz-ma-amplifydataamplifycodege-o2as8a7qlq7j.s3.amazonaws.com/servicio-fotografia/fotografia-retrato-estilo-de-vida-toptenagency.jpg"
+                        src="https://ttag-portfolio.s3.amazonaws.com/servicio_fotografia_hero/fotografia-retrato-estilo-de-vida-toptenagency+copia.webp"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -324,7 +325,7 @@ export default function Fotografia() {
         {/* Image section */}
         <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
           <img
-            src="https://amplify-d2jtebj3g0cdpz-ma-amplifydataamplifycodege-o2as8a7qlq7j.s3.amazonaws.com/servicio-fotografia/fotografia-platillo-bebida-arquitectura-toptenagency.jpg"
+            src="https://ttag-portfolio.s3.amazonaws.com/servicios_fotografia_banner.webp"
             alt=""
             className="aspect-[5/2] w-full object-cover xl:rounded-3xl"
           />
@@ -498,12 +499,12 @@ export default function Fotografia() {
                   >
                     <img
                       src={testimonial.imageSrc}
-                      alt="Testimonial"
+                      alt="Proyecto"
                       className="w-full rounded-t-2xl"
                     />
                     <figcaption className="flex items-center gap-x-4 border-t border-gray-900/10 px-6 py-4">
                       <div className="flex items-center justify-center h-10 w-10 bg-gray-50 rounded-full">
-                        <svg
+                        <CameraIcon
                           className="h-6 w-6 text-fotografia"
                           aria-hidden="true"
                         />

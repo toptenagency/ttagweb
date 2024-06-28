@@ -5,7 +5,7 @@ import {
   CloudArrowUpIcon,
   LockClosedIcon,
   ServerIcon,
-  PlayIcon,
+  VideoCameraIcon,
 } from "@heroicons/react/20/solid";
 
 import ServicesCta from "@/components/sections/services-cta";
@@ -122,7 +122,7 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function Audiovisual() {
   return (
     <div className="bg-white">
       <main>
@@ -171,7 +171,7 @@ export default function Example() {
                   <a href="#" className="flex items-center gap-x-1">
                     <span className="absolute inset-0" aria-hidden="true" />
                     See open positions
-                    <PlayIcon
+                    <VideoCameraIcon
                       className="-mr-2 h-5 w-5 text-gray-400"
                       aria-hidden="true"
                     />
@@ -510,7 +510,7 @@ export default function Example() {
                     />
                     <figcaption className="flex items-center gap-x-4 border-t border-gray-900/10 px-6 py-4">
                       <div className="flex items-center justify-center h-10 w-10 bg-gray-50 rounded-full">
-                        <PlayIcon
+                        <VideoCameraIcon
                           className="h-6 w-6 text-audiovisual"
                           aria-hidden="true"
                         />
